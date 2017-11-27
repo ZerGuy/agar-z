@@ -21,7 +21,8 @@ var app = express();
 // Set up the server
 // process.env.PORT is related to deploying on heroku
 var port = process.env.PORT || 3000;
-var server = app.listen(port, 'localhost', listen);
+var host = process.env.HOST || '0.0.0.0';
+var server = app.listen(port, host, listen);
 
 // This call back just tells us that the server has started
 function listen() {
