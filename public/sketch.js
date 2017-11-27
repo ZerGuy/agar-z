@@ -15,7 +15,7 @@ function setup() {
   createCanvas(600, 600);
   // Start a socket connection to the server
   // Some day we would run this server somewhere else
-  socket = io.connect('https://fierce-sierra-42943.herokuapp.com:5000');
+  socket = io.connect('https://fierce-sierra-42943.herokuapp.com');
 
 
   blob = new Blob(random(width), random(height), random(8, 24));
